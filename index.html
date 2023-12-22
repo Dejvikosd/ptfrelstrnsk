@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--Dobrý den :)-->
+<!--Děkuji fontawesome pro úžasné ikony a Timotejovi Hlavovi pro pomoci designu stránek.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!--MICROSOFT EDGE COMPABILITA-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<!--IS - 1.0-->
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>DavidV - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+	<!--FontAwesome.com script pro import  -->
+    <script src="https://kit.fontawesome.com/a533785b3c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<!------------DOMOV-------------->
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/vlevonahorevecnevimjakdlouhytohlemuzebejt.png" class="logo">
+                <ul id="sidemenu">
+					<li><a href="#portfolio">Blender Portfolio</a></li>
+                    <li><a href="#about">O mně</a></li>
+                    <li><a href="#services">Ostatní</a></li>
+                   
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>3D Hobby Artist, C++ Programátor</p>
+                <h1>Dobrý den,<br> jmenuji se <span>David</span></h1>
+            </div>
+		</div>
+    </div>
+
+	<!------------PROJEKTY-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Blender Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h2>Poslední Render</h3>
+                            <p>Render ranní snídaně s kávičkou a sladkostmi :)</p>
+                            <a href="https://docs.google.com/document/d/1EMGSuKHnPluu96eicdSxKbhFQnkNsJpXWfIJ_I_md6o/edit?usp=sharing" target="_blank"><i class="fa-solid fa-info"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h2>Poslední Model</h3>
+                            <p>Samsung S21 Low Poly mobilní telefon
+                            </p>
+                    </div>
+                </div>
+				<div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h2>Low Poly Modely</h3>
+                            <p>Modely, které jsem vytvořil pro své projekty a lowpoly portfolio
+                            </p>
+                            <a href="https://docs.google.com/document/d/1s_WkAFvaOt5lNCOdF4VwVga7g93_yshZNH3MQU6DNcY/edit?usp=sharing" target="_blank"><i class="fa-solid fa-info"></i></a>
+                    </div>
+                </div>
+				
+        </div>
+
+    </div>
+<!------------O MNĚ-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">O mně</h1>
+                    <p>Jmenuji se David Vičkutkin. Je mi 16 let a pocházím z České Republiky, studuji na Střední Průmyslové škole v Teplicích obor IT specialista. 
+					Zaměřuji se především na programování, 3D úmění jako koníček a herní vývoj obecně.</p>
+                    <div class="tab-titles">
+					
+						<p class="tab-links active-link" onclick="opentab('Vzdelani')">Vzdělání</p>
+						
+						<p class="tab-links" onclick="opentab('Certifikaty')">Certifikáty</p>
+                        
+                        <p class="tab-links" onclick="opentab('Zkusenosti')">Zkušenosti</p>
+                    
+                    </div>
+					<div class="tab-contents active-tab" id="Vzdelani">
+                        <ul>
+							<li><span>2023</span><br>Kurzy Blender - hard surface modeling</li>
+							<li><span>2022 - doposud</span><br>Studium na Střední průmyslové škole v Teplicích</li>
+                            <li><span>2022</span><br>Godot GDScript introduction, "derivát" Pythonu</li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certifikaty">
+                        <ul>
+                            <li><span>2023</span><br>BlackMagic Design Certifikace, znalost softwaru a teorie barev</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Zkusenosti">
+                        <ul>
+
+                            <li><span>2022 - Doposud</span><br>Godot Engine, vědomost o funkci herního enginu a jeho roli ve hrách</li>
+                            <li><span>2021 - Doposud</span><br>Blender - tvorba 3D modelů</li>
+							<li><span>2019 - Doposud</span><br>Tvorba webových stránek pomocí HTML, CSS a JavaScriptu</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	<div>
+<!------------Ostatní-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Ostatní</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <h2>Kontakt</h2>
+                    <p>Můžete mne kontaktovat na E-mailové adrese: davidvichkutkin@gmail.com</p>
+                    <p><a href="mailto:davidvichkutkin@gmail.com">E-MAIL</a></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>IT Slot 2022</h2>
+                    <p>Účastnil jsem se národní soutěže IT-Slot v roce 2022, z finálního kola jsem skončil na 28 místě z 48 účastníků a opět na 28 místě z 4963 žáků ze 127 škol v prvím kole.</p>
+                    <a href="https://www.vecerni-praha.cz/it-slot-souboj-ceskych-zaku-v-informatice-ma-sve-viteze/">ČLÁNEK</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Blackmagic DaVinci Resolve certifikace</h2>
+                    <p>Během 2/3Q 2023 jsem se zabýval Davinci video editorem a teorii/praxi barev ve videích či 3D kompozicí, složil jsem i testy Blackmagic Design které mě certifikují.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+ 
+
+</body>
+
+</html>
