@@ -65,18 +65,15 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
-    -webkit-text-stroke: 2px black;
 }
 
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
-    -webkit-text-stroke: 2px black;
 }
 
 .header-text h1 span {
     color: #00ffe0;
-    -webkit-text-stroke: 2px black;
 }
 /*-------------O MNE-------------*/
 #about {
