@@ -1,173 +1,388 @@
 <!DOCTYPE html>
-<!--Dobrý den :)-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-	<!--MICROSOFT EDGE COMPABILITA-->
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<!--IS - 1.0-->
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <link rel="icon" type="image/x-icon" href="/images/179698c423b0a3f7fdc31eab.jpg">
-    <title>DavidV - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-	<!--FontAwesome.com script pro import  -->
-    <script src="https://kit.fontawesome.com/a533785b3c.js" crossorigin="anonymous"></script>
+    <meta name="description" content="3D Portfoliová stránka">
+    <meta name="keywords" content="3D, Kreativní">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David V. Portfolio</title>
+
+    <!-- Fonty Spol. Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS + Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-
-<!------------DOMOV-------------->
 <body>
-	<div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/vlevonahorevecnevimjakdlouhytohlemuzebejt.png" class="logo">
-                <ul id="sidemenu">
-					<li><a href="#portfolio">3D Portfolio</a></li>
-                    <li><a href="#about">O mně</a></li>
-                    <li><a href="#services">Ostatní</a></li>
-                   
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>3D Hobby Artist</p>
-                <h1>Dobrý den,<br> jsem <span>David Vičkutkin</span></h1>
-            </div>
-	</div>
+    <!-- Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-<!------------PROJEKTY-------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">3D Portfolio</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h2>Poslední Render</h3>
-                            <p>Render ranní snídaně s kávičkou a sladkostmi :)</p>
-                            <a href="https://docs.google.com/document/d/1EMGSuKHnPluu96eicdSxKbhFQnkNsJpXWfIJ_I_md6o/edit?usp=sharing" target="_blank"><i class="fa-solid fa-info"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h2>Poslední Model</h3>
-                            <p>Samsung S21 Low Poly mobilní telefon
-                            </p>
-                    </div>
-                </div>
-				<div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h2>Low Poly Modely</h3>
-                            <p>Modely, které jsem vytvořil pro své projekty a lowpoly portfolio
-                            </p>
-                            <a href="https://docs.google.com/document/d/1s_WkAFvaOt5lNCOdF4VwVga7g93_yshZNH3MQU6DNcY/edit?usp=sharing" target="_blank"><i class="fa-solid fa-info"></i></a>
-                    </div>
-                </div>
-				
-        </div>
 
-    </div>
-<!------------O MNĚ-------------->
-    <div id="about">
+    <!-- Header Section Begin -->
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title">O mně</h1>
-                    <p>Jmenuji se David Vičkutkin. Je mi 16 let a pocházím z České Republiky, studuji na Střední Průmyslové škole v Teplicích obor IT specialista. 
-					Zaměřuji se především na programování, 3D úmění jako koníček a herní vývoj obecně.</p>
-                    <div class="tab-titles">
-					
-						<p class="tab-links active-link" onclick="opentab('Vzdelani')">Vzdělání</p>
-						
-						<p class="tab-links" onclick="opentab('Certifikaty')">Certifikáty</p>
-                        
-                        <p class="tab-links" onclick="opentab('Zkusenosti')">Zkušenosti</p>
-                    
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="Domov"></a>
                     </div>
-					<div class="tab-contents active-tab" id="Vzdelani">
-                        <ul>
-							<li><span>2023</span><br>Kurzy Blender - hard surface modeling</li>
-							<li><span>2022 - doposud</span><br>Studium na Střední průmyslové škole v Teplicích, IT</li>
-                            <li><span>2022</span><br>Godot GDScript introduction, "derivát" Pythonu</li>
-                          
-                        </ul>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Domov</a></li>
+                              <!--   <li><a href="./about.html">O mně</a></li> -->
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./services.html">Služby</a></li>
+                                <!-- <li><a href="#">Pages</a>-->
+                                 <!--    <ul class="dropdown">-->
+                                      <!--   <li><a href="./about.html">About</a></li>-->
+                                  <!--       <li><a href="./portfolio.html">Portfolio</a></li>-->
+                                   <!--      <li><a href="./blog.html">Blog</a></li>-->
+                                 <!--        <li><a href="./blog-details.html">Blog Details</a></li>-->
+                               <!--      </ul>-->
+                             <!--    </li>-->
+                              <!--  <li><a href="./contact.html"></a></li>-->
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="Certifikaty">
-                        <ul>
-                            <li><span>2023</span><br>BlackMagic Design Certifikace, znalost softwaru, teorie a práce s barvami</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Zkusenosti">
-                        <ul>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-                            <li><span>2022 - Doposud</span><br>Godot Engine, vědomost o funkci herního enginu a jeho roli ve hrách</li>
-                            <li><span>2021 - Doposud</span><br>Blender - tvorba 3D modelů</li>
-							<li><span>2019 - Doposud</span><br>Tvorba webových stránek pomocí HTML, CSS a JavaScriptu</li>
-
-                        </ul>
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Video</span>
+                                <h2>Portfolio</h2>
+                                <a href="https://www.renderhub.com/" class="primary-btn">Portfolio</a>
+                            </div>
+                        </div>
                     </div>
-				 </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>3D Rendery</span>
+                                <h2>BPR+4K Textury</h2>
+                                <a href="#" class="primary-btn">Ukázky</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>3 možnost</span>
+                                <h2>3</h2>
+                                <a href="#" class="primary-btn">3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-	<div>
-	<!------------Ostatní-------------->
-    <div id="services">
+    </section>
+    <!-- Hero End -->
+
+    <!-- ZnlstBeg -->
+    <section class="services spad">
         <div class="container">
-            <h1 class="sub-title">Ostatní</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-regular fa-envelope"></i>
-                    <h2>Kontakt</h2>
-                    <p>Můžete mne kontaktovat na E-mailové adrese: davidvichkutkin@gmail.com</p>
-                    <p><a href="mailto:davidvichkutkin@gmail.com">E-MAIL</a></p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Dovednosti</span>
+                            <h2>Co dokážu?</h2>
+                        </div>
+                        <p>Lorus ipnus, nullus est liber et partique parte prosit.</p>
+                        <a href="#" class="primary-btn">Vše...</a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>IT Slot 2022</h2>
-                    <p>Účastnil jsem se národní soutěže IT-Slot v roce 2022, z finálního kola jsem skončil na 28 místě z 48 účastníků a opět na 28 místě z 4963 žáků ze 127 škol v prvím kole.</p>
-                    <a href="https://www.vecerni-praha.cz/it-slot-souboj-ceskych-zaku-v-informatice-ma-sve-viteze/" target="_blank">ČLÁNEK</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-film"></i>
-                    <h2>Blackmagic DaVinci Resolve certifikace</h2>
-                    <p>Během 2/3Q 2023 jsem se zabýval Davinci video editorem a teorii/praxi barev ve videích či 3D kompozicí, složil jsem i testy Blackmagic Design které mě certifikují.</p>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
+                                </div>
+                                <h4>1</h4>
+                                <p>Lorus ipnus, nullus est liber et partique parte prosit.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
+                                </div>
+                                <h4>2</h4>
+                                <p>Lorus ipnus, nullus est liber et partique parte prosit.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
+                                </div>
+                                <h4>3</h4>
+                                <p>Lorus ipnus, nullus est liber et partique parte prosit.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>4</h4>
+                                <p>Zdroj ikon: https://icons.getbootstrap.com/.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-	<!------------Skripty-------------->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    </section>
+    <!-- Znlst End -->
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    <!-- Ukazky Beg -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>Txt</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>Txt</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>Txt</h4>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu")
+    <!--  Blog  -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Our Blog</span>
+                        <h2>Blog Update</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                                        <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>aklj?</h4>
+                            <ul>
+                                <li>DATUM</li>
+                            </ul>
+                            <p>sdaddasd </p>
+                            <a href="#">Více <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                                       <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>asdads?</h4>
+                            <ul>
+                                <li>DATUM</li>
+                            </ul>
+                            <p>jiklda</p>
+                            <a href="#">Více <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>asdjlj?</h4>
+                            <ul>
+                                <li>DATUM</li>
+                            </ul>
+                            <p> jiklda</p>
+                            <a href="#">Více <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+					                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>asd?</h4>
+                            <ul>
+                                <li>DATUM</li>
+                            </ul>
+                            <p> jiklda</p>
+                            <a href="#">Více <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Blog -->
 
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
+    <!-- CTA -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Blender 4.1 Geometry nodes</h2>
+                        <p>....</p>
+                        <a href="#">..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Konec -->
 
-    </script>
- 
+    <!-- Ftr -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>..</h5>
+                            <p>Nullus.</p>
+                            <a href="#" class="read__more">Více <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>2</h5>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>3</h5>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Jestli newslettery vůbec někdy fungovaly.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
